@@ -30,6 +30,9 @@ def main():
     clonar_directorio(args.ruta, destino)
 
     print("Proyecto cloando...")
+
+    print("Eliminado .git...")
+    delete_in_folder(destino, '.git/')
     
     print("Eliminado node_modules...")
     delete_in_folder(destino, 'node_modules')
